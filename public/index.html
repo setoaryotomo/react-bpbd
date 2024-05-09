@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta name="description" content="Web site created using create-react-app" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -25,8 +23,31 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-  </head>
-  <body>
+
+    <!-- Favicons -->
+    <link href="/images/logo-bpbd.png" rel="icon">
+    <link href="/images/logo-bpbd.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="/assets/frontend/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="/assets/frontend/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/frontend/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/assets/frontend/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/assets/frontend/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="/assets/frontend/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="/assets/frontend/assets/css/style.css" rel="stylesheet">
+
+    <!-- <link href="/css/splide.css" rel="stylesheet"> -->
+</head>
+
+<body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -39,5 +60,46 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+
+    <script src="/assets/frontend/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="/assets/frontend/assets/vendor/aos/aos.js"></script>
+    <script src="/assets/frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/frontend/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/assets/frontend/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/assets/frontend/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/frontend/assets/vendor/php-email-form/validate.js"></script>
+
+    <script src="/cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+        integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="/code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <script>
+        function tabGallery(src) {
+            $("#expanded-img").attr("src", src);
+        }
+
+        $("#tab-0").click(function () {
+            tabGallery($(this).attr("src"));
+        });
+        $("#tab-1").click(function () {
+            tabGallery($(this).attr("src"));
+        });
+        $("#tab-2").click(function () {
+            tabGallery($(this).attr("src"));
+        });
+        $("#tab-3").click(function () {
+            tabGallery($(this).attr("src"));
+        });
+        $("#tab-4").click(function () {
+            tabGallery($(this).attr("src"));
+        });
+    </script>
+
+    <!-- Template Main JS File -->
+    <script src="/assets/frontend/assets/js/main.js"></script>
+
+</body>
+
 </html>

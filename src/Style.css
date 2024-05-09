@@ -1,0 +1,187 @@
+
+* {
+  text-decoration: none !important;
+}
+
+.card-info {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 440px;
+  margin-bottom: 30px;
+  border-radius: 40px;
+  color: rgba(0, 0, 0, 0.87);
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card-info .card-image {
+  width: 100px;
+  position: relative;
+  background: whitesmoke;
+  overflow: hidden;
+  margin-left: 30px;
+  margin-top: -50px;
+  border-radius: 20px;
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card-body-info {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.card-info .card-image .card-caption {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: #fff;
+  font-size: 1.3em;
+  text-shadow: 0 2px 5px rgba(33, 33, 33, 0.5);
+}
+
+.card-info img {
+  /* width: 100%; */
+  height: auto;
+}
+
+.img-raised {
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.286));
+}
+
+.carousel-item .slide-dark {
+  position: relative;
+  z-index: -1;
+}
+
+#image {
+  width: 11%;
+  float: left;
+  margin-right: 2%;
+}
+
+#image img {
+  max-width: 100%;
+}
+
+#image-artikel {
+  width: 25%;
+  float: left;
+  margin-right: 2%;
+}
+
+#image-artikel img {
+  max-width: 100%;
+}
+
+#content {
+  text-align: left;
+  float: right;
+  width: 70%;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+  #image,
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .carousel-caption {
+    padding-top: 70px;
+  }
+
+}
+
+.container-infografis {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0000009d;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container-infografis:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#tab-gallery .columns .column {
+  float: left;
+}
+
+#tab-gallery .columns .column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#tab-gallery .columns .column img:hover {
+  opacity: 1;
+}
+
+#tab-gallery .columns::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#tab-gallery .tab-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#tab-gallery .tab-container #expanded-img {
+  width: 100%;
+}
+
+/* Add WA floating button CSS */
+.floating {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.fab-icon {
+  margin-top: 50px;
+}
